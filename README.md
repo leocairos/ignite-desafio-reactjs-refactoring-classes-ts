@@ -33,6 +33,23 @@ Nesse desafio, foi criada uma aplicação para treinar o que se aprendeu
 Essa será uma aplicação já funcional onde o seu principal objetivo é realizar dois processos de migração: de Javascript para Typescript e de Class Components para Function Components.
 
 
+## Preparando ambiente Typescript
+
+Como esse era um projeto CRA sem TypeScript, primeiro foi preciso instalar as dependências/tipagens e configurar o TS. Como sugestão foi criado um novo projeto CRA com Typescript e comparado a estrutura atual com a que precisaria ter. Realizando essa comparação, facilmente consegue-se ver que:
+
+- É preciso instalar o `typescript`
+- É preciso criar um arquivo de configuração `tsconfig.json`. Inclusive, pode-se utilizar a configuração gerada automaticamente no CRA template Typescript para criar o arquivo.
+- É preciso criar um arquivo `react-app-env.d.ts` com o conteúdo:
+
+  ```tsx
+  /// <reference types="react-scripts" />
+  ```
+
+- É preciso instalar as tipagens das bibliotecas.
+
+Configurando esse setup, foi possivel trabalhar normalmente com o Typescript no projeto.
+
+
 ## 📝 Licença
 
 Este projeto esta sob a licença MIT.
